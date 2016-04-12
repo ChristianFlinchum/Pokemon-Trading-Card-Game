@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A999135-EAC7-467C-A7B7-7EB7BE790BB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pokemon_Trading_Card_Game</RootNamespace>
+    <AssemblyName>Pokemon Trading Card Game</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Deck.cs" />
+    <Compile Include="Energy.cs" />
+    <Compile Include="OneAttackBasicPokemon.cs" />
+    <Compile Include="Coin.cs" />
+    <Compile Include="frmChampion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChampion.Designer.cs">
+      <DependentUpon>frmChampion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoinToss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoinToss.Designer.cs">
+      <DependentUpon>frmCoinToss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGameBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGameBoard.Designer.cs">
+      <DependentUpon>frmGameBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBattle1Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBattle1Intro.Designer.cs">
+      <DependentUpon>frmBattle1Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBattle2Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBattle2Intro.Designer.cs">
+      <DependentUpon>frmBattle2Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBattle3Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBattle3Intro.Designer.cs">
+      <DependentUpon>frmBattle3Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBattle4Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBattle4Intro.Designer.cs">
+      <DependentUpon>frmBattle4Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseDeck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseDeck.Designer.cs">
+      <DependentUpon>frmChooseDeck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLose.Designer.cs">
+      <DependentUpon>frmLose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpponentHand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpponentHand.Designer.cs">
+      <DependentUpon>frmOpponentHand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheck.Designer.cs">
+      <DependentUpon>frmCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlayersHand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayersHand.Designer.cs">
+      <DependentUpon>frmPlayersHand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrizes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrizes.Designer.cs">
+      <DependentUpon>frmPrizes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWin.Designer.cs">
+      <DependentUpon>frmWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OneAttackEvolutionaryPokemon.cs" />
+    <Compile Include="Opponent.cs" />
+    <Compile Include="PlusPower.cs" />
+    <Compile Include="PokemonCard.cs" />
+    <Compile Include="Potion.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trainer.cs" />
+    <Compile Include="TwoAttackBasicPokemon.cs" />
+    <Compile Include="TwoAttackEvolutionaryPokemon.cs" />
+    <EmbeddedResource Include="frmChampion.resx">
+      <DependentUpon>frmChampion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheck.resx">
+      <DependentUpon>frmCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCoinToss.resx">
+      <DependentUpon>frmCoinToss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGameBoard.resx">
+      <DependentUpon>frmGameBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBattle1Intro.resx">
+      <DependentUpon>frmBattle1Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBattle2Intro.resx">
+      <DependentUpon>frmBattle2Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBattle3Intro.resx">
+      <DependentUpon>frmBattle3Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBattle4Intro.resx">
+      <DependentUpon>frmBattle4Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChooseDeck.resx">
+      <DependentUpon>frmChooseDeck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLose.resx">
+      <DependentUpon>frmLose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpponentHand.resx">
+      <DependentUpon>frmOpponentHand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayersHand.resx">
+      <DependentUpon>frmPlayersHand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrizes.resx">
+      <DependentUpon>frmPrizes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWin.resx">
+      <DependentUpon>frmWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pokémon Trading Card Game Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PokeballStadiumBackround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trainer Profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrockProfile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Squirtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulbasaur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Charmander.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreatBallStaduimBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Misty Profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lt.SurgeProfile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UltraBallStadiumBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rival Profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MasterBallStadiumBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PokemonCardBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoinTossImage11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Celebrate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CryingPikachu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CryingMewtwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HaunterBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HaunterBackground1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingBlastoise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingCharzard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingVaporeon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingSlowbro.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingOddish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingJolteon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingEevee.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingFlareon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingPoliwag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingPoliwirl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingStaryu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmilingCaterpie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blaine%27s Charmander.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
